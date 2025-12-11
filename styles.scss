@@ -1,0 +1,95 @@
+.root-container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  /* background: #fff;*/
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  /* max-width: 1500px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+}
+
+/* Only the panel-border remains as the main visible box */
+.panel-border {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 016px 14px 16px;
+  margin: 20px auto;
+  /* max-width: 1200px !important; */
+  /* width: 750px !important; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Left-align the title with the table */
+.panel-title {
+  display: block;
+  width: calc(100% - 0px);
+  max-width: 2440px;
+  box-sizing: border-box;
+  margin: 0 auto 16px auto;
+  border-bottom: 2px solid #4299e1;
+  padding-bottom: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: left;
+}
+
+/* Selection box: fit content, right-aligned */
+.select-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.select-box {
+  border: 1px solid #cbd5e0;
+  padding: 20px 16px 16px 16px;
+  background: white;
+  width: fit-content;
+  min-width: 0;
+  max-width: 100%;
+  width: 300px;
+  position: relative;
+  align-self: flex-end;
+  border-radius: 8px;
+}
+
+/* Selection box title */
+.select-title {
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+  background: white;
+  padding: 0 8px;
+  margin: 0;
+}
+
+.select-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+}
+
+.select-form-row {
+  display: contents;
+  align-items: right;
+}
