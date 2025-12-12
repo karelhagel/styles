@@ -94,13 +94,42 @@
   align-items: right;
 }
 
+/* Modal and form field group spacing */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 18px;
+}
+
+/* Modal record details and warning text */
+.record-details {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #2d3748;
+  line-height: 1.5;
+}
+
+.warning-text {
+  color: #d9534f;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  text-align: left;
+}
+}
+
 .form-label {
   font-weight: 500;
   font-size: 14px;
-  margin-bottom: -6px;
+  margin-bottom: 4px;
   text-align: right;
   color: #222;
   display: block;
+  padding-bottom: 2px;
 }
 
 *,
@@ -117,6 +146,15 @@
   border-radius: 4px;
   text-align: right;
   width: 170px;
+}
+
+textarea.form-input {
+  text-align: left;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 60px;
+  padding: 6px 8px;
 }
 
 .form-input:focus,
@@ -525,15 +563,16 @@ th.table-sub-header {
 /* === MODAL STYLES === */
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 
 .modal-content {
