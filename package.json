@@ -1,9 +1,10 @@
 {
-  "name": "@karelhagel/portfolio-styles",
-  "version": "0.1.0",
+  "name": "@karelhagel/styles",
+  "version": "1.0.0",
   "description": "Shared SCSS styles for my Angular projects",
   "main": "styles.scss",
   "style": "styles.scss",
+  "sass": "styles.scss",
   "files": [
     "styles.scss"
   ],
