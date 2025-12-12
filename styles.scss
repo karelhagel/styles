@@ -93,3 +93,426 @@
   display: contents;
   align-items: right;
 }
+
+.form-label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: -6px;
+  text-align: right;
+  color: #222;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.form-input {
+  padding: 6px 8px;
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  text-align: right;
+  width: 170px;
+}
+
+.form-input:focus,
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #0b5fff;
+  box-shadow: 0 0 0 2px rgba(11, 95, 255, 0.1);
+}
+
+.bulk-form-container {
+  width: 720px;
+  align-self: last baseline;
+}
+.table-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.table-section h4 {
+  text-align: center;
+  margin: 0 0 15px 0;
+  color: #222;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* .bulk-table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 100%;
+  max-height: 900px;
+  overflow-y: auto;
+  align-self: center;
+} */
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.warning-message {
+  color: #d9534f;
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+.success-message {
+  color: #5cb85c;
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+.error-message {
+  color: #d9534f;
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+.loading-message {
+  color: #666;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+/* === COMMON TABLE STYLES === */
+
+.table-subtotal {
+  background: #fafafa;
+  font-weight: 500;
+  /* color: blue; */
+}
+
+.table-subtotal-label {
+  font-weight: 600;
+}
+
+.table-subtotal-cell {
+  background: #fafafa;
+  font-weight: 600;
+  /* color: green; */
+  text-align: right;
+}
+
+.table-grand-total {
+  background: #eee;
+  font-weight: 700;
+}
+
+.table-grand-total-label {
+  font-weight: 700;
+}
+
+.main-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Helvetica, Arial, sans-serif;
+  table-layout: fixed;
+}
+
+.main-table th,
+.main-table td {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.main-table th {
+  background-color: #f5f5f5;
+  padding: 6px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.main-table td {
+  padding: 4px 5px;
+  border: 1px solid #ddd;
+}
+
+.main-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.main-table th:nth-child(1),
+.main-table td:nth-child(1) {
+  width: 80px;
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main-table th:nth-child(2),
+.main-table td:nth-child(2) {
+  width: 120px;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main-table th:nth-child(3),
+.main-table td:nth-child(3) {
+  width: 80px;
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.action-link {
+  background: none;
+  border: none;
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.action-link:hover:not(:disabled) {
+  color: #004499;
+}
+
+.action-link:disabled {
+  color: #999;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.bulk-currency-input-wrapper {
+  position: relative;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bulk-formatted-display {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 100px;
+  padding: 4px;
+  text-align: right;
+}
+
+.bulk-formatted-display.bulk-readonly {
+  cursor: default;
+  color: #666;
+}
+
+.bulk-balance-input {
+  width: 120px;
+  text-align: right;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.bulk-balance-input:read-only {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.bulk-hidden {
+  display: none;
+}
+
+.bulk-fixed-interest-indicator {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* === PNL TABLE SPECIFIC STYLES === */
+
+/* Center table header cells */
+.table-opening-header,
+.table-sub-header,
+.table-month-header {
+  width: 130px !important;
+  min-width: 130px !important;
+  max-width: 130px !important;
+
+  text-align: center;
+}
+
+/* Header styling */
+.table-header-main,
+.table-header-details {
+  background: #e2e8f0;
+}
+
+/* Account column */
+.table-group-header,
+.table-account-header,
+.table-balances-table td:first-child {
+  width: 180px !important;
+  min-width: 180px !important;
+  max-width: 180px !important;
+  box-sizing: border-box;
+  background: #e2e8f0;
+  font-weight: 700;
+  color: #1e293b;
+  vertical-align: middle;
+  width: 180px;
+}
+
+th.table-group-header {
+  border-right: none;
+}
+th.table-account-header {
+  border-left: none;
+}
+
+td.table-group-name {
+  border-right: none;
+}
+
+td.table-account-name {
+  border-left: none;
+}
+
+/* Value columns: sub-header and value cells only */
+.table-sub-header,
+td.table-value-cell,
+th.table-sub-header {
+  width: 130px !important;
+  min-width: 130px !important;
+  max-width: 130px !important;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+/* Remove width from month header */
+.table-month-header {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+/* Right-align all value cells */
+.table-value-cell,
+.table-opening-header,
+.table-sub-header {
+  text-align: right !important;
+}
+
+.table-empty {
+  background: #f8f9fa;
+}
+
+.table-empty td {
+  padding: 20px;
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Base Chart Styles */
+
+.base-chart-wrap {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+.base-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+.base-chart-title {
+  font-weight: 700;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+.base-chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.base-chart-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.base-chart-legend-item .base-chart-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  border: 1px solid #999;
+  display: inline-block;
+}
+.base-chart-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.base-chart-grid-line {
+  stroke: #f0f0f0;
+  stroke-width: 1;
+}
+.base-chart-tick-label {
+  fill: #444;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.base-chart-line {
+  fill: none;
+}
+.base-chart-hit {
+  fill: transparent;
+  cursor: crosshair;
+}
+.base-chart-hover-line {
+  stroke: #bbb;
+  stroke-dasharray: 4 4;
+}
+.base-chart-hover-dot {
+  fill: #fff;
+  stroke-width: 1.75;
+}
+.base-chart-tooltip-bg {
+  fill: #333;
+  opacity: 0.94;
+}
+.base-chart-tooltip-text {
+  font-family: Helvetica, Arial, sans-serif;
+  fill: #fff;
+  font-size: 12px;
+}
+.base-chart-tooltip-text.base-chart-strong {
+  font-weight: 700;
+}
+/* --- End BaseChartComponent styles (prefixed) --- */
