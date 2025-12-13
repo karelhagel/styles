@@ -15,7 +15,7 @@ In the client’s package.json:
 ```
 Then update when you release a new tag:
 ```
-npm install
+npm update @karelhagel/styles
 ```
 
 ## Without tight version control
@@ -36,5 +36,5 @@ In the client’s package.json:
 ```
 Then update when you release a new tag:
 ```
-npm install
+npm update @karelhagel/styles
 ```

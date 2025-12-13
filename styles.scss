@@ -561,6 +561,13 @@ th.table-sub-header {
 /* === MODAL STYLES === */
 /* === MODAL STYLES === */
 .modal-overlay {
+  /* Overlay pane for modal (CDK overlay panelClass) */
+  .modal-pane {
+    /* No sizing, background, or padding here! Only z-index or overlay-specific tweaks if needed. */
+    position: static;
+    box-shadow: none;
+    background: none;
+  }
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
