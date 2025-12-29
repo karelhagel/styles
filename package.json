@@ -1,7 +1,7 @@
 {
   "name": "@karelhagel/styles",
   "version": "1.0.7",
-  "description": "Shared SCSS styles for my Angular projects",
+  "description": "Shared SCSS styles for all my Angular projects",
   "main": "styles.scss",
   "style": "styles.scss",
   "sass": "styles.scss",
