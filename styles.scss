@@ -137,12 +137,20 @@
   box-sizing: border-box;
 }
 
-.form-input {
+.form-input,
+select,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
   padding: 6px 8px;
   font-family: inherit;
   font-size: 14px;
   border: 1px solid #c9c9c9;
   border-radius: 4px;
+}
+
+.form-input {
   text-align: right;
   width: 170px;
 }
@@ -731,4 +739,200 @@ th.table-sub-header {
 .pagination button:hover:not(:disabled):not(.active),
 .pagination a:hover:not(:disabled):not(.active) {
   background: #cbd5e0;
+}
+
+/* === GLOBAL RESET === */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  background: #fff;
+  color: #222;
+}
+
+/* === PANEL COMPONENT === */
+
+.panel-panel-container {
+  margin-bottom: 12px;
+  display: flex;
+}
+.panel-panel-container.panel-align-center {
+  justify-content: center;
+}
+.panel-panel-container.panel-align-left {
+  justify-content: flex-start;
+}
+.panel-panel-container.panel-align-right {
+  justify-content: flex-end;
+}
+.panel-panel {
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 18px 16px 14px;
+  position: relative;
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .panel-panel {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 14px 8px 10px 8px;
+  }
+}
+.panel-panel-title {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: #fff;
+  padding: 0 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* === LOGIN COMPONENT === */
+
+.login-wrap {
+  max-width: 360px;
+  margin: 80px auto;
+  padding: 0;
+  background: none;
+  font-family: Helvetica, Arial, sans-serif;
+  box-shadow: none;
+}
+@media (min-width: 601px) {
+  .login-wrap {
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+  .login-wrap .panel-panel {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.resend {
+  font-size: 13px;
+  color: #0b5fff;
+  cursor: pointer;
+  margin-top: -6px;
+  text-decoration: none;
+}
+.resend.disabled {
+  color: #aaa;
+  pointer-events: none;
+}
+
+/* === BUTTON STYLES === */
+
+.primary-button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  background: #0b5fff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.primary-button:hover:not(:disabled) {
+  background: #094acc;
+}
+.primary-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* === APP LAYOUT === */
+
+.app-container {
+  min-height: calc(100vh - 60px);
+  background-color: #f8fafc;
+}
+
+/* === BULK UPDATES === */
+
+.bulk-updates-panel {
+  box-sizing: border-box;
+  width: 1480px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.bulk-updates-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  border-bottom: 2px solid #4299e1;
+  width: calc(100% - 32px);
+  margin: 0 auto 16px auto;
+  text-align: left;
+}
+.bulk-updates-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.bulk-updates-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+.bulk-updates-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.bulk-updates-table th,
+.bulk-updates-table td {
+  padding: 4px 10px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: right;
+  min-width: 130px;
+}
+.bulk-updates-table th:first-child,
+.bulk-updates-table td:first-child {
+  text-align: left;
+  min-width: 180px;
+}
+.bulk-updates-table tr {
+  height: 28px;
+}
+.bulk-updates-table tr:nth-child(even) {
+  background: #f7fafc;
+}
+.bulk-updates-table tr:last-child td {
+  border-bottom: none;
+}
+.bulk-updates-submit-btn {
+  margin-top: 16px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  background: #4299e1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.bulk-updates-submit-btn:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
 }
