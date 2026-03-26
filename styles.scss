@@ -941,7 +941,7 @@ body {
 
 .ha-device-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 16px;
 }
@@ -992,7 +992,7 @@ body {
 
 .ha-schedule-head {
   display: grid;
-  grid-template-columns: 48px 130px minmax(160px, 1fr) 130px 80px 36px;
+  grid-template-columns: 32px 115px 1fr 120px 70px 32px;
   gap: 6px;
   padding: 0 4px 6px;
   border-bottom: 1px solid #e2e8f0;
@@ -1011,7 +1011,7 @@ body {
 
 .ha-schedule-row {
   display: grid;
-  grid-template-columns: 48px 130px minmax(160px, 1fr) 130px 80px 36px;
+  grid-template-columns: 32px 115px 1fr 120px 70px 32px;
   gap: 6px;
   align-items: center;
   padding: 6px 4px;
@@ -1086,7 +1086,7 @@ body {
 .ha-days {
   display: flex;
   gap: 3px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .ha-day-btn {
