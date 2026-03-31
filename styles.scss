@@ -992,7 +992,7 @@ body {
 
 .ha-schedule-head {
   display: grid;
-  grid-template-columns: 28px 200px 215px 130px 65px 90px;
+  grid-template-columns: 28px 230px 215px 130px 65px 90px;
   gap: 6px;
   padding: 0 8px 6px;
   border-bottom: 1px solid #e2e8f0;
@@ -1011,7 +1011,7 @@ body {
 
 .ha-schedule-row {
   display: grid;
-  grid-template-columns: 28px 200px 215px 130px 65px 90px;
+  grid-template-columns: 28px 230px 215px 130px 65px 90px;
   gap: 6px;
   align-items: center;
   padding: 6px 8px;
@@ -1029,6 +1029,7 @@ body {
 .ha-time-group {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   gap: 4px;
   align-items: center;
 
