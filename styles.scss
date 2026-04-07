@@ -722,7 +722,9 @@ th.table-sub-header {
   font-size: 15px;
   font-family: inherit;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
+  transition:
+    background 0.15s,
+    color 0.15s;
 }
 .pagination button.active,
 .pagination a.active {
@@ -1235,12 +1237,24 @@ body {
   text-overflow: ellipsis;
 }
 
-.inc-col-type    { width: 200px; }
-.inc-col-currency{ width: 80px; }
-.inc-col-monthly { width: 160px; }
-.inc-col-rate    { width: 80px; }
-.inc-col-usd     { width: 140px; }
-.inc-col-actions { width: 80px; }
+.inc-col-type {
+  width: 400px;
+}
+.inc-col-currency {
+  width: 80px;
+}
+.inc-col-monthly {
+  width: 160px;
+}
+.inc-col-rate {
+  width: 80px;
+}
+.inc-col-usd {
+  width: 140px;
+}
+.inc-col-actions {
+  width: 80px;
+}
 
 .income-readonly {
   color: #999;
@@ -1281,15 +1295,38 @@ body {
   padding: 0;
 }
 
-.btn-icon.btn-edit   { color: #1a56db; }
-.btn-icon.btn-edit:hover  { background: #e8f0fe; border-color: #c3d4f9; }
+.btn-icon.btn-edit {
+  color: #1a56db;
+}
+.btn-icon.btn-edit:hover {
+  background: #e8f0fe;
+  border-color: #c3d4f9;
+}
 
-.btn-icon.btn-save   { color: #1a7a35; }
-.btn-icon.btn-save:hover:not(:disabled)  { background: #e6f4ea; border-color: #b7dfbf; }
-.btn-icon.btn-save:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn-icon.btn-save {
+  color: #1a7a35;
+}
+.btn-icon.btn-save:hover:not(:disabled) {
+  background: #e6f4ea;
+  border-color: #b7dfbf;
+}
+.btn-icon.btn-save:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 
-.btn-icon.btn-cancel { color: #555; }
-.btn-icon.btn-cancel:hover { background: #f0f0f0; border-color: #ccc; }
+.btn-icon.btn-cancel {
+  color: #555;
+}
+.btn-icon.btn-cancel:hover {
+  background: #f0f0f0;
+  border-color: #ccc;
+}
 
-.btn-icon.btn-delete { color: #c0392b; }
-.btn-icon.btn-delete:hover { background: #fdecea; border-color: #f5b7b1; }
+.btn-icon.btn-delete {
+  color: #c0392b;
+}
+.btn-icon.btn-delete:hover {
+  background: #fdecea;
+  border-color: #f5b7b1;
+}
