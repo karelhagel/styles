@@ -1230,31 +1230,16 @@ body {
   width: 100%;
 }
 
+/* Reset the generic main-table nth-child max-width constraints */
 .income-table th,
 .income-table td {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: none !important;
 }
 
-.inc-col-type {
-  width: 400px;
-}
-.inc-col-currency {
-  width: 80px;
-}
-.inc-col-monthly {
-  width: 160px;
-}
-.inc-col-rate {
-  width: 80px;
-}
-.inc-col-usd {
-  width: 140px;
-}
-.inc-col-actions {
-  width: 80px;
-}
+/* Column widths driven by <colgroup> in the template */
 
 .income-readonly {
   color: #999;
