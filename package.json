@@ -8,5 +8,8 @@
   "files": [
     "styles.scss"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@karelhagel/styles": "github:karelhagel/styles"
+  }
 }
