@@ -1352,15 +1352,17 @@ body {
   background-color: #fffbe6;
 }
 
+.table-forecast {
+  background: #eee;
+}
+
 .table-forecast-label {
-  background: #f0f4ff;
   font-weight: 700;
   padding: 4px 5px;
   border: 1px solid #ddd;
 }
 
 .table-forecast-value {
-  background: #f0f4ff;
   font-weight: 700;
   text-align: right;
   padding: 4px 5px;
