@@ -1315,3 +1315,39 @@ body {
   background: #fdecea;
   border-color: #f5b7b1;
 }
+
+/* === BALANCE FORECAST TABLE === */
+
+.forecast-table {
+  table-layout: fixed;
+  width: 560px;
+}
+
+.forecast-table th,
+.forecast-table td {
+  max-width: none !important;
+}
+
+.forecast-input {
+  width: 160px;
+  text-align: right;
+  padding: 4px 6px;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.forecast-input:focus {
+  outline: none;
+  border-color: #0b5fff;
+  box-shadow: 0 0 0 2px rgba(11, 95, 255, 0.1);
+}
+
+.forecast-saved {
+  color: #555;
+}
+
+.forecast-unsaved td {
+  background-color: #fffbe6;
+}
