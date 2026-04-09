@@ -1368,3 +1368,72 @@ body {
   padding: 4px 5px;
   border: 1px solid #ddd;
 }
+
+/* === FORECAST REPORT TABLE === */
+
+.fr-scroll-wrapper {
+  overflow-x: auto;
+}
+
+.fr-table {
+  table-layout: auto;
+  min-width: max-content;
+}
+
+.fr-table th,
+.fr-table td {
+  max-width: none !important;
+  white-space: nowrap;
+}
+
+.fr-label-col {
+  min-width: 220px;
+  font-weight: 500;
+}
+
+.fr-year-col {
+  min-width: 100px;
+  padding: 4px 8px;
+}
+
+/* Row type styles */
+.fr-row-income td {
+  background: #fff;
+}
+
+.fr-row-subtotal td {
+  background: #f0f0f0;
+  font-weight: 700;
+  border-top: 2px solid #ccc;
+}
+
+.fr-row-balance td {
+  background: #e8f4e8;
+  font-weight: 700;
+}
+
+.fr-row-forecast td {
+  background: #e8eaf6;
+  font-style: italic;
+}
+
+.fr-row-diff td {
+  background: #fff8e1;
+  font-weight: 700;
+}
+
+/* Calculated cell marker */
+.fr-calculated {
+  color: #555;
+}
+
+.fr-calc-marker {
+  font-size: 0.65em;
+  color: #888;
+  vertical-align: super;
+  margin-left: 1px;
+}
+
+.fr-empty {
+  color: #bbb;
+}
