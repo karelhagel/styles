@@ -1389,7 +1389,19 @@ body {
 .fr-label-col {
   min-width: 220px;
   font-weight: 500;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.08);
 }
+
+/* Ensure sticky label cells inherit row background */
+.fr-row-subtotal .fr-label-col { background: #f0f0f0; }
+.fr-row-balance .fr-label-col  { background: #e8f4e8; }
+.fr-row-forecast .fr-label-col { background: #e8eaf6; }
+.fr-row-diff .fr-label-col     { background: #fff8e1; }
+thead .fr-label-col            { background: #f5f5f5; }
 
 .fr-year-col {
   min-width: 100px;
